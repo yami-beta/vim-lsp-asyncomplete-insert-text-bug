@@ -15,11 +15,11 @@ source ./tmp/plug.vim
 call plug#begin('./tmp/plugged')
 
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete.vim', { 'commit': 'c4d93a8' }
 let g:asyncomplete_smart_completion = 0
 
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp', { 'commit': '1aba956' }
+Plug 'prabirshrestha/asyncomplete-lsp.vim', { 'commit': 'b9630e2' }
 
 let g:lsp_log_verbose = 1
 let g:lsp_log_file = expand('./tmp/vim-lsp.log')
